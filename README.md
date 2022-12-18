@@ -14,3 +14,6 @@ Test: "It should return a price based on size"
 Code: let myPizza = new Pizza(["olives", "mushrooms"], "medium");
 Expected Output: Pizza { toppings: ["olives", "mushrooms"], size: "medium", price: 14 }
 
+Test: "It should return a price based on size, and add $1.50 for each topping"
+Code: let myPizza = new Pizza(["olives", "mushrooms"], "medium");
+Expected Output: Pizza { toppings: ["olives", "mushrooms"], size: "medium", price: 17 }
