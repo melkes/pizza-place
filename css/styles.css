@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
+.pizza-form {
+background-color: #f9f7e7;
+}
+body {
+  background-color: #f7f0bf;
+  font-family: 'Crimson Text', serif;
+}
+/* label {
+  margin: 1rem 0;
+} */
+/* 
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 .5rem;
+} */

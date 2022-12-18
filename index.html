@@ -1,13 +1,60 @@
 <html>
-  <head>
-    <script type="text/javascript" src="js/scripts.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Il Codice Pizza</title>
-  </head>
-  <body>
+
+<head>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Il Codice Pizza</title>
+</head>
+
+<body>
+  <div class="container pizza-form">
     <h1>Welcome to Il Codice Pizza</h1>
-    <p>We are a pizzeria serving delicious, wood-fired pizza. Our dough is made fresh daily and our toppings are sourced from the finest ingredients.</p>
-    <h2>Our Menu</h2>
-    <p>Take a look at our menu to see all of the delicious pizzas we have to offer.</p>
-  </body>
+    <p>We are a pizzeria serving delicious, wood-fired pizza. Our dough is made fresh daily and our toppings are sourced
+      from the finest ingredients.</p>
+      <img src="/img/cathal-mac-an-bheatha-CJAKsppS2co-unsplash.jpg" class="img-fluid">
+
+    <h2>Create your pizza!</h2>
+    <p>Choose a size for your pizza, and then pick out toppings ($1.50 each)</p>
+    <p>When you click submit, you will get the price.</p>
+    <div class="container">
+      <div class="row">
+
+          <form>
+            <h2>Size:</h2><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="sz-sm" name="size" value="small">
+              <label class="form-check-input"  for="sz-sm"> Small</label><br>
+              <input class="form-check-input"  type="radio" id="sz-md" name="size" value="medium">
+              <label class="form-check-input"  for="sz-md"> Medium</label><br>
+              <input class="form-check-input"  type="radio" id="sz-lg" name="size" value="large">
+              <label class="form-check-input"  for="sz-lg"> Large</label><br><br>
+            </div>
+
+      </div>
+      <div class="row">
+        <div class="form-check">
+          <h2>Toppings:</h2><br>
+
+            <input type="checkbox" name="toppings" value="fresh mozzarella"> Fresh Mozzarella<br>
+            <input type="checkbox" name="toppings" value="arugula"> Arugula<br>
+            <input type="checkbox" name="toppings" value="cherry tomatoes"> Cherry Tomatoes<br>
+            <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms<br>
+            <input type="checkbox" name="toppings" value="onion"> Onion<br>
+            <input type="checkbox" name="toppings" value="olives"> Olives<br>
+            <input type="checkbox" name="toppings" value="peppers"> Peppers<br>
+            <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="toppings" value="prosciutto"> Prosciutto<br>
+          </div>
+        </div>
+      </div>
+      </form>
+
+
+
+  </div>
+  </div>
+</body>
+
 </html>
