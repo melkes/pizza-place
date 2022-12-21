@@ -15,15 +15,13 @@
 ## Setup/Installation Requirements
 
 * Clone this repo and open index.html
-
-## Known bugs
-* UI logic is not complete
 * Functionality can be tested in console using TDD tests at bottom of the readme.
+
 ## Roadmap
 ### Needed improvements:
-* Submit button in html/UI logic in Javascript
 * Better design/styling
-* More complexity, e.g. more options for pizzas.
+* More complexity, e.g. more options for pizzas, maybe preset combinations.
+* Error message if user does not choose a size option.
 
 ---
 ## License
