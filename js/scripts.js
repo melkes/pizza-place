@@ -14,19 +14,27 @@ function Pizza(toppings, size) {
 Pizza.prototype.getPrice = function () {
   return this.basePrice + this.toppings.length * 1.5;
 };
-const toppings = [];
-const size = "";
 
-const pizza = new Pizza(toppings, size);
-const pizzaPrice = pizza.getPrice();
 
 window.addEventListener("load", function () {
   let form = document.querySelector("form");
 
   form.addEventListener("submit", function (event) {
-    // i don't think I need this if I'm just displaying price
-    //const sizeInput = document.querySelector('input[name="size"]:checked');
-    document.querySelector("#price").innerText = "$" + price;
+    const sizeInput = document.querySelector('input[name="size"]:checked');
+    const size = sizeInput.value;
+    const toppingChoice = document.querySelectorAll('input[name="toppings"]:checked');
+    const toppings = [];
+    for (const input of toppingChoice) {
+      toppings.push(input.value);
+    }
+    const pizza = new Pizza(toppings, size);
+
+    pizza.toppings = toppings;
+    pizza.size = size;
+    const pizzaPrice = pizza.getPrice();
+
+    console.log(pizzaPrice);
+    document.querySelector("#price").innerText = "$" + pizzaPrice;
     event.preventDefault();
   });
 });
