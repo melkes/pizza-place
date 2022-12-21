@@ -15,14 +15,15 @@ Pizza.prototype.getPrice = function () {
   return this.basePrice + this.toppings.length * 1.5;
 };
 
-
 window.addEventListener("load", function () {
   let form = document.querySelector("form");
 
   form.addEventListener("submit", function (event) {
     const sizeInput = document.querySelector('input[name="size"]:checked');
     const size = sizeInput.value;
-    const toppingChoice = document.querySelectorAll('input[name="toppings"]:checked');
+    const toppingChoice = document.querySelectorAll(
+      'input[name="toppings"]:checked'
+    );
     const toppings = [];
     for (const input of toppingChoice) {
       toppings.push(input.value);
@@ -33,7 +34,6 @@ window.addEventListener("load", function () {
     pizza.size = size;
     const pizzaPrice = pizza.getPrice();
 
-    console.log(pizzaPrice);
     document.querySelector("#price").innerText = "$" + pizzaPrice;
     event.preventDefault();
   });
