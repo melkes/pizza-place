@@ -15,6 +15,7 @@ Pizza.prototype.getPrice = function () {
   return this.basePrice + this.toppings.length * 1.5;
 };
 
+// UI logic
 window.addEventListener("load", function () {
   let form = document.querySelector("form");
 
@@ -33,8 +34,8 @@ window.addEventListener("load", function () {
     pizza.toppings = toppings;
     pizza.size = size;
     const pizzaPrice = pizza.getPrice();
-
-    document.querySelector("#price").innerText = "$" + pizzaPrice;
+    let formattedPrice = pizzaPrice.toFixed(2);
+    document.querySelector("#price").innerText = "Your pizza will be $" + formattedPrice;
     event.preventDefault();
   });
 });

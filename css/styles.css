@@ -6,11 +6,13 @@ background-color: #fdf0e7;
 body {
   background-color: #f1d8c5;
   font-family: 'Crimson Text', serif;
+  font-weight: 600;
 }
 
 .priceClass {
   margin-bottom: 5vw;
   height: 5vh;
+  font-size: 28px;
 }
 /* label {
   margin: 1rem 0;
