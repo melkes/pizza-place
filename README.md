@@ -3,6 +3,8 @@
 ## By Mike Wilkes
 
 #### _A website for a pizza place using Javascript objects and constructors to allow creation of custom pizza order with pricing_
+
+#### This project is also viewable on [Github Pages](https://melkes.github.io/pizza-place/)
 ---
 
 ## Technologies Used
